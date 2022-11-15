@@ -1,0 +1,131 @@
+<!--Cuerpo-->
+<div class="contenedor">
+    <!--Formulario ZombieTest-->
+    <article>
+        <h1>ZOMBIE TEST</h1>
+        <figure>
+            <img src="Images/covid2.jpg " alt="virus" class="imgNoticias">
+        </figure>
+        <section>
+            <p class="TextoJustificado">Completá este formulario para saber si has contraido el virus o no. Recuerda que en caso de ser positivo, ¡tienes los dias contados!</p>
+            <form class="width-100" id="formularioTest">
+                <div class="divFormulario margin-15-0 width-100">
+                    <label for="nombreApellido" class="inputFormulario">NOMBRE Y APELLIDO:</label>
+                    <input id="nombreApellido" class="sin-fondo text-center width-100 ln-bottom" type="text" value="" name="nombreApellido" required>
+                </div>
+                <div class="divPreguntasFormulario">
+                    <div class="divFormulario margin-15-0 width-100">
+                    <label for="selectPregunta1" class="contenidoSelect">¿Has tenido fiebre?</label>
+                        <select name="selectPregunta1" class="respuestasSelect width-100"required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                            <option value="puede ser">PUEDE SER</option>
+                        </select>
+                    </div>
+                    <div class="divFormulario margin-15-0 width-100">
+                        <label for="selectPregunta2" class="contenidoSelect">¿Has tenido dolores de cabeza?</label>
+                        <select name="selectPregunta2" class="respuestasSelect width-100" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                            <option value="tal vez">TAL VEZ</option>
+                        </select>
+                    </div>
+                    <div class="divFormulario margin-15-0 width-100">
+                        <label for="selectPregunta3" class="contenidoSelect">¿Has vomitado más de lo normal?</label>
+                        <select name="selectPregunta3" class="respuestasSelect width-100" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                            <option value="eso no se dice">ESO NO SE DICE
+                        </select>
+                    </div>
+                    <div class="divFormulario margin-15-0 width-100">
+                        <label for="selectPregunta4" class="contenidoSelect">¿Has perdido el sentido del gusto?</label>
+                        <select name="selectPregunta4" class="respuestasSelect width-100" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                            <option value="no es covid">NO ES COVID, LO JURO</option>
+                        </select>
+                    </div>
+                    <div class="divFormulario margin-15-0 width-100">
+                        <label for="selectPregunta5" class="contenidoSelect">¿Has perdido el olfato?</label>
+                        <select name="selectPregunta5" class="respuestasSelect width-100" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                            <option value="no se">NO SÉ</option>
+                        </select>
+                    </div>
+                    <div class="divFormulario margin-15-0 width-100">
+                    <label for="selectPregunta6" class="contenidoSelect">¿Has tenido lagunas mentales?</label>
+                        <select name="selectPregunta6" class="respuestasSelect width-100" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                            <option value="no recuerdo">NO RECUERDO</option>  
+                        </select>
+                    </div>
+                    <div class="divFormulario margin-15-0 width-100">
+                    <label for="selectPregunta7" class="contenidoSelect">¿Te apetece mucho la carne roja?</label>
+                        <select name="selectPregunta7" class="respuestasSelect width-100" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                            <option value="un asado siempre viene bien">UN ASADO SIEMPRE VIENE BIEN</option>
+                        </select>
+                    </div>
+                    <div class="divFormulario margin-15-0 width-100">
+                    <label for="selectPregunta8" class="contenidoSelect">¿Has tenido ataques de ira?</label>
+                        <select name="selectPregunta8" class="respuestasSelect width-100" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                            <option value="no se">NO SÉ</option>
+                            <option value="cuantas preguntas">¡¿TANTAS PREGUNTAS VAS A HACER?!</option>
+                        </select>
+                    </div>
+                    <div class="divFormulario margin-15-0 width-100">
+                    <label for="selectPregunta9" class="contenidoSelect">¿Las heridas tardan en sanar?</label>
+                        <select name="selectPregunta9" class="respuestasSelect width-100" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                            <option value="no se">NO SÉ</option>
+                        </select>
+                    </div>
+                    <div class="divFormulario margin-15-0 width-100">
+                    <label for="selectPregunta10" class="contenidoSelect">¿Has bajado mucho de peso?</label>
+                        <select name="selectPregunta10" class="respuestasSelect width-100" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="si">SI</option>
+                            <option value="no">NO</option>
+                            <option value="no se">NO SÉ</option>
+                            <option value="ojala">OJALÁ</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" id="btn_VerificarTest" class="botones margin-15-0">VERIFICAR TEST</button>
+            </form>  
+        <section>
+            <p>COMPLETA EL CAPTCHA DE MANERA CORRECTA PARA VERIFICAR EL TEST</p>
+            <div class="Jsfy-center" id="divResultadoTest">
+                <p class="texto-importante negrita letra-bordo" id="textoBienvenida"></p>
+                <p class="texto-importante negrita letra-bordo" id="textoResultadoTest" class="TextoJustificado"></p>
+            </div>
+        </section>   
+        </section>
+        <!--Captcha-->
+        <section>
+            <div class="divCaptcha sombreado Jsfy-center self-center width-100">
+                <span>¿ERES UN ZOMBIE?</span>
+                <label class="captcha letra-blanca Jsfy-center margin-15-0 b-radius" id="captcha"></label> <!--LABEL DONDE SE GENERA EL CAPTCHA-->
+                <input class="ingresoCaptcha sombreado b-radius letra-gris text-center" id="ingresoCaptcha" name="ingresoCaptcha" type="text" maxlength="8" placeholder="Ingrese Captcha" value="">
+                <p id="textoVerificaCaptcha"></p>
+                <button id="btnComprobarCaptcha" class="btn-captcha botones">Comprobar</button>
+            </div>
+        </section>
+    </article>
+</div>

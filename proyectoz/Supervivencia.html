@@ -1,0 +1,100 @@
+<div class="contenedor">
+    <article>
+        <h1>TIPS DE SUPERVIVENCIA</h1>
+        <figure>
+            <img src="Images/supervivencia.jpg" alt="kit de supervivencia">
+        </figure>
+        <section class="TextoJustificado">
+            <p> Al haber sobrevivido hasta ahora y pensando en que otros supervivientes podrían estar pensando en 
+                cómo hacer para huir de ahí, construimos este sitio y lo hicimos llegar a cada pantalla que pudiera ser encendida, bueno, eso 
+                tu ya lo sabes porque aquí estás, leyéndonos.</p>
+            <a href="#infoSupervivencia" class="link_leerMas negrita self-center desplegarNoticia" id="desplegarNoticia3">LEER MÁS</a>
+        </section>
+        <section class="oculto TextoJustificado" id="infoSupervivencia">
+            <p> Creamos una guía de supervivencia para que puedas llegar lo más completo posible hacia donde estamos nosotros, los supervivientes al fin del mundo. </p>
+            <p> Sabemos que seguramente estás atravesando un momento de lo más difícil, los zombies y los afectados por covid están atestando el país y vos estás solito pasando por todo esto. </p>
+            <p> De yapa, no hay aviones, trenes, camiones ni barcos o submarinos  que nos puedan sacar de acá. Para colmo, el mundo entero nos cerró las fronteras, así que los mismos argentinos tenemos que ayudarnos a sobrepasar toda esta realidad que está de locura. </p>
+            <p> En fin, sigue los pasos y sobrevive a lo que está pasando fuera de tu casa(o donde estés escondido). Asi que, amigo, te deseamos suerte y esperamos que seas bueno corriendo. </p>
+            <p>Lo primero que tenés que hacer es armar una mini mochila con botiquín y provisiones para un par de días. Una vez armado el equipo(no olvides tener algo que sirva como arma contra zombies), debes dirigirte al mercado más cercano, allí buscarás provisiones.</p>
+            <button id="cerrarNoticia3" class="btnCerrarNoticia sombreado-none"><img src="Images/logoArriba.png" class="imgBtnCerrar sombreado-none"></button>
+        </section>
+    <!--LISTA-->
+        <section>
+            <h2>Una vez en el mercado debes tomar: </h2>
+            <ul class="lista sombreado" id="listaKitSupervivencia">
+                <li class="item-kit">Alimentos no perecederos(ejemplo: arroz)</li>                                                  
+                <li class="item-kit">Abrelatas(para acompañar el arroz con atún)</li>
+                <li class="item-kit">Anafe pequeño o un pedernal(para prender el fuego)</li>
+                <li class="item-kit">Lata de gas para el anafe o palitos para el pedernal</li>
+                <li class="item-kit">Encendedor o fósforos(que no se mojen)</li>
+                <li class="item-kit">Olla pequeña(para cocinar el arroz)</li>
+                <li class="item-kit">Cuchara(para revolver el arroz)</li>
+                <li class="item-kit">Agua(siempre hay que estar bien hidratado)</li>
+                <li class="item-kit">Papel higiénico(no vas a ir por ahí sin limpiarte)</li>
+                <li class="item-kit">Toallitas húmedas(recuerda que no estas solo)</li>
+                <li class="item-kit">Linterna(para alumbrarte)</li>
+                <li class="item-kit">Pilas para la linterna(fijate que sean las correctas)</li>
+                <li class="item-kit">Navaja suiza(por si hay que forzar entradas)</li>
+                <li class="item-kit">Algo que sirva de arma(puede ser una sartén y de paso cocinás ahí también)</li>
+            </ul>
+        </section>
+        <section class="TextoJustificado">
+            <p>Luego, ve a una farmacia y toma vendas, agua oxigenada y pervinox, también algo para quemaduras y una caja de barbijos y guantes, nunca sabes cuando el aire puede ser tóxico. Si encuentras una armería o una ferretería, puedes conseguir un arma mejor.</p>
+            <p>Una vez que tengas todo, podrás intentar conseguir un auto que sea de preferencia a nafta y un par de botellones de esta y también el embudo para poder colocarla en el auto.</p>
+        </section>
+    </article>
+<!--TABLA-->
+    <article>
+        <h2>SAFEPLACE & NOTANSAFE</h2>
+        <section class="TextoJustificado">
+            <p> Ya con el vehículo en mano, lo más recomendable es buscar un lugar alejado de la población. </p>
+            <p> Habiendo encontrado un SafePlace, debes cercar el lugar y poner trampas y alarmas caseras. Estas últimas pueden ser desde una soga con latas para oír cuando se acercan los zombies a unos palos con pinches que no les permita entrar a tu guarida. Recuerda siempre intentar ser silencioso, los zombies siguen el sonido. </p>
+            <p> Una vez instalado, podrás marcar en un mapa los lugares que se mostrarán en la siguiente tabla y organizar el recorrido para llegar a nosotros. Estos lugares los dejamos en óptimas condiciones para que te resguardes en la noche, tienen entre uno a dos días de viaje en auto. Igual, no te confíes, nosotros dejamos provisiones, balas y medicamentos allí, pero no te aseguramos que no haya zombies en la zona actualmente. </p>
+        </section>
+        <section>
+            <form class="formTabla" id="formularioTabla">
+                <div class="divFormTabla margin-15-0 width-100 row">
+                    <label for="inputZona">Zona:</label>
+                    <input type="text" id="inputZona" name="inputZona" class="inputTabla" value="" placeholder="Ingrese n° de zona" >
+                </div>
+                <div class="divFormTabla margin-15-0 width-100 row">
+                    <label for="inputUbicacion">Ubicación:</label>
+                    <input type="text" id="inputUbicacion" name="inputUbicacion" class="inputTabla" value="" placeholder="Ej: Corrientes">
+                </div>
+                <div class="divFormTabla margin-15-0 width-100 row">
+                    <label for="inputSeguridad">Seguridad:</label>
+                    <select name="inputSeguridad" id="inputSeguridad">
+                        <option value="true">Roja</option>
+                        <option value="false">Segura</option>
+                    </select>
+                </div>
+                <div class="divFormTabla margin-15-0 width-100 row">
+                    <label for="inputCoordenada">Punto cardinal:</label>
+                    <select name="inputCoordenada" id="inputCoordenada">
+                        <option value="North">North</option>
+                        <option value="west">West</option>
+                        <option value="South">South</option>
+                        <option value="East">East</option>
+                    </select>
+                </div>
+                <div class="divBtnsTabla row width-100" id="divBtnsTabla">
+                    <button type="button" name="btnModificarTabla" id="btnModificarTabla" class="botones">Modificar</button>
+                    <button type="button" name="btnEnviarTabla" id="btnEnviarTabla" class="botones">Submit</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <table class="self-center sombreado margin-15-0 width-100" id="tablaZonasSeguras">
+                <thead id="thead_tabla">
+                </thead>
+                <tbody id="tbody_tabla">
+                </tbody>
+            </table>
+            <div class="divBtnsTabla row width-100" id="divBtnsTabla">
+                <button type="button" id="btn_x3" class="botones">Agregar(x3)</button>
+                <button type="button" id="btnBorrarUltimo" class="botones">Borrar último</button>
+                <button type="button" id="btnVaciarTabla" class="botones">Borrar tabla</button>
+            </div>
+        </section>
+    </article>
+</div>

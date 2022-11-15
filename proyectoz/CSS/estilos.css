@@ -1,0 +1,306 @@
+@font-face{
+    font-family: 'Rubik';
+    src: url('fonts/rubik-regular/RubikDirt-Regular.ttf')
+}
+@font-face {
+    font-family: 'Lekton';
+    src: url('fonts/Lekton/Lekton-Regular.ttf');
+}
+body{
+    background-color:rgba(42, 39, 39, 0.144);
+    font-family: 'Lekton','Courier New', Courier, monospace;
+    color:rgb(19, 18, 18); 
+    margin:70px 0px;
+    text-align: center;
+}
+header, footer{
+    position: fixed;
+    background-color:rgb(42, 39, 39);
+}
+/*Flex-box*/
+header, div, article, section, figure, form, nav{
+    display:flex;
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Jsfy-center{
+    justify-content: center;
+}
+div,label,.navegador{
+    align-items:center;
+}
+.self-center, button{
+    align-self: center;
+}
+/*Medidas(ancho)*/
+.width-100, img{
+    width:100%;
+}
+.logoCabecera{
+    width: 45%;
+}
+.logoMenu,.btnCerrarNoticia{
+    width: 13%;
+}
+/*margin, padding, border*/
+.margin-15-0{
+    margin: 15px 0;
+}
+.link_leerMas,.btnCerrarNoticia, .encabezado{
+    margin:10px;
+}
+.divCaptcha,.divNotaCompleta{
+    margin: 40px 0 0;
+}
+.navegador, figure{
+    margin:0;
+}
+.item-kit,select,.select-date{
+    padding:5px;
+} 
+tbody tr td, thead tr th,.ingresoCaptcha{
+    padding: 10px 0;
+}
+#captcha,.divCaptcha{
+    padding: 20px 0;
+}
+.b-radius, input, select, .link_leerMas{
+    border-radius:10px;
+}
+.ln-bottom, .divFormTabla{
+    border-bottom: 1px solid rgba(63, 62, 62, 0.819);
+}
+button, input{
+    border: none;
+}
+/*sombreados y fondos*/
+.sombreado, img, button{
+    box-shadow: 0px 5px 4px rgb(68, 66, 66); /*horizontal, vertical, opacidad, color*/
+}
+.sombreado-none{
+    box-shadow: none;
+}
+.texto-importante{
+    text-shadow: 0px 1px 5px #ffffff;
+}
+select, .select-date{  
+    background: #f0f0f0;
+    border:2px solid rgba(0,0,0,0.2);
+}
+ul,thead tr th{ /*navegador y lista*/
+    background-color:rgba(42, 39, 39, 0.733);
+}
+.sin-fondo,.inputTabla,.btnCerrarNoticia, .btn_delete, .btn_editar{
+    background-color: inherit;
+}
+/*estilos de texto*/
+input, select{
+    font-family: 'Lekton','Courier New', Courier, monospace;
+}
+.captcha, h1, .menu{
+    font-size: 25px;
+}
+label,span,select,input,a.link_leerMas{
+    font-size: 18px;
+}
+h1,.menu, .captcha{
+    font-weight: lighter;
+    font-family: 'Rubik','Courier New', Courier, monospace;
+}
+.negrita, input, span, th{
+    font-weight: bold;
+}
+.letra-blanca,th,ul, button, .Zona_roja{
+    color: rgb(238, 238, 242);
+}
+.letra-bordo, input, .link_leerMas,.divFormTabla{
+    color:#462525;
+}
+.letra-gris,h1, h2,select{
+    color: rgb(68, 67, 67);
+}
+a, h1, h2{
+    letter-spacing:2px;
+}
+.text-center, .inputTabla{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+/*HEADER*/
+header{
+    top: 0;
+    height: 70px;
+    justify-content: flex-start;
+}
+ul.navegador{ 
+    padding-left: 0;
+}
+nav ul li{ /*LIST ITEMS DEL NAVEGADOR*/
+    list-style: none;
+    padding: 20px;
+}
+/*DIVS, ARTICLES, SECTION*/
+.contenedor{
+    padding: 0 20px;
+    max-width: 100%;
+}
+.divNotaCompleta{
+    border-top: 1px ridge grey;
+}
+.divCaptcha{
+    background-color: #b0a9a989;
+}
+/*IMAGENES*/
+img{
+    height: auto;
+}
+/*LINKS y TEXTOS*/
+a.menu{
+    text-shadow: 1px 2px 5px rgb(5, 5, 5);
+}
+.TextoJustificado{
+    text-align: justify;
+}
+p{
+    margin-bottom:0;
+}
+footer p{
+    margin: 5px 0;
+}
+/*BOTONES*/
+.botones{
+    width: 30%;
+    border-radius:25px;
+    padding: 10px;
+    background:  rgb(84, 24, 24);
+}
+/*Lista*/
+ul.lista{
+    padding:25px; 
+    text-align: start; 
+}
+/*TABLA*/
+table{
+    border-collapse: collapse;
+    max-width: 100%;
+}
+.Zona_roja{
+    background-color: #640404d5;
+}
+
+/*CAPTCHA*/
+.captcha{
+    font-size: 35px;
+    background: linear-gradient(rgba(163, 0, 0, 0.758),rgba(36, 35, 35, 0.971));
+    text-shadow: 3px 3px 1px rgb(8, 8, 8);
+    width: 70%;
+    height: 50%;
+} 
+/*FOOTER*/
+.piePagina{
+    bottom:0;
+    box-shadow: 0px -3px 4px rgb(104, 103, 103); /*horizontal, vertical, opacidad, color*/ 
+}
+ /*OCULTA Y MUESTRA EL ELEMENTO SEGUN EVENTOS DE JS*/
+.oculto, .nav_oculto{
+    display: none;
+}
+.btn_delete, .btn_editar{
+    width: 35px;
+    height:auto;
+    box-shadow: none;
+}
+.btn_delete img, .btn_editar img{
+    box-shadow: none;
+}
+@media only screen and (min-width:450px){ /*Solo si el ancho es mayor o igual a 450px*/
+    body{
+        font-size: 25px;
+        margin-bottom:0;
+    }
+    /*encabezado*/
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header div.encabezado{
+        width: 30%;
+        margin: 0%;
+        justify-content: center;
+    }
+    .logoCabecera{
+        width: 80%;
+    }
+    nav{
+        flex-direction: row;
+        justify-content: end;
+    }
+    header nav ul.navegador{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin:0%;
+        background-color:inherit;
+        box-shadow: none;
+        width: 70%;
+    }
+    header nav ul li{
+        padding: 0;
+        margin: 10px;
+    }
+    a.menu{
+        font-size:30px;
+    }
+    div.contenedor{
+        margin-bottom: 20px;
+    }
+    h1,h2,#nombreApellido,.captcha, .inputFormulario{
+        font-size: 35px;
+    }
+    footer p,.divCaptcha p, label, button,span.resaltado,select, input, a.link_leerMas{
+        font-size:20px;
+    }
+    select.respuestasSelect{
+        width: 90%;
+    }
+    /*CASE OCULTO MODIFICADO*/
+    .nav_oculto, .oculto{
+        display:flex;
+    }
+    .logoMenu, .btnCerrarNoticia, #desplegarNoticia3{
+        display: none;
+    }
+    /*captcha*/
+    .divCaptcha{
+        width:40%;
+    }
+    /*DIVS*/
+    div.divArticulosPrincipales,.divPreguntasFormulario{
+        display:grid;
+        grid-template-columns: repeat(2, 50%);
+        align-items: flex-start;
+    }
+    .divBtnsTabla{
+        margin-top:5%;
+    }
+    /*IMAGENES*/
+    figure, .formTabla{
+        align-items: center;
+    }
+    img{
+        width: 90%;
+    }
+    img.imgArticulosPrincipales{
+        height: 250px;
+        align-self: center;
+    }
+    footer{
+        position: static;
+    }
+}
